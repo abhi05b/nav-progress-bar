@@ -1,5 +1,5 @@
 {
-  "name": "customvalidation",
+  "name": "nav-progress-bar",
   "private": true,
   "scripts": { "start": "node web.js" },
   "devDependencies": {
