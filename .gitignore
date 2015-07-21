@@ -1,7 +1,8 @@
 /node_modules
+
 /.tmp
+
 /.sass-cache
+
 /bower_components
 
-/node_modeules
-/bower_components
