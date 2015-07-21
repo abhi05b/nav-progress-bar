@@ -14,11 +14,11 @@ Running `grunt test` will run the unit tests with karma.
 NavProgressBar as name suggests is a widget to easily add a progress bar which supports Sections and Sub-section(also referred as Pages).
 <div><br>
 </div>
-<div>Demo<br>
+<div><font color="#0000ff" size="5"><b><a href="https://nav-progressbar.herokuapp.com/" target="_blank">Demo</a></b></font><br>
 <div><br>
 </div>
 <div><b>Usage:</b></div>
-<div>1) Project can be downloaded from&nbsp;https://github.com/abhi05b/progress-bar.git or can be added in bower.json.</div>
+<div>1) Project can be downloaded from https://github.com/abhi05b/nav-progress-bar.git or can be added in bower.json.</div>
 <div>2) Inject 'navProgressBarApp' in your module.</div>
 <div>3) In template use directive&nbsp;</div>
 <div>
@@ -46,7 +46,7 @@ NavProgressBar as name suggests is a widget to easily add a progress bar which s
 </div>
 <div>Images:</div>
 <div>
-<div style="display: block; text-align: left;"><a imageanchor="1" href="https://sites.google.com/site/uifrontenddoc/navprogressbar/NavProgressBarCheckout.png"><img src="/site/uifrontenddoc/navprogressbar/NavProgressBarCheckout.png" border="0" style="width: 100%;"></a></div>
+<div style="display:block;text-align:left"><a href="https://sites.google.com/site/uifrontenddoc/navprogressbar/NavProgressBarCheckout.png?attredirects=0" imageanchor="1"><img border="0" src="https://sites.google.com/site/uifrontenddoc/navprogressbar/NavProgressBarCheckout.png" style="width:100%"></a></div>
 <br>
 </div>
 <div>
@@ -57,4 +57,3 @@ NavProgressBar as name suggests is a widget to easily add a progress bar which s
 <div><br>
 </div>
 </div>
-
