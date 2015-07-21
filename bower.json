@@ -11,13 +11,18 @@
     "angular-sanitize": "^1.3.0",
     "angular-touch": "^1.3.0",
     "angular-ui": "~0.4.0",
-    "angular-bootstrap": "~0.13.0"
+    "angular-bootstrap": "~0.13.0",
+	"custom-validation": "https://github.com/abhi05b/custom-validation.git"
   },
+  "main": [
+  "app/scripts/app.js",
+  "app/styles/main.css"
+  ],
   "devDependencies": {
     "angular-mocks": "^1.3.0"
   },
   "appPath": "app",
-  "moduleName": "customValidationApp",
+  "moduleName": "navProgressBarApp",
   "overrides": {
     "bootstrap": {
       "main": [

@@ -62,7 +62,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 1830px;
   }
 
   /* Remove the padding we set earlier */
@@ -86,19 +86,23 @@ body {
 .employeeSteps.sixStepsFlow .icon-cartLg .title {
     margin-top: 25px;
   }
+@media only screen and (max-width: 960px) {
  .employeeSteps.sixStepsFlow {
     width: 100%;
   }
+}
+@media only screen and (max-width: 600px) {
   .employeeSteps.sixStepsFlow .title {
     text-align: right;
     transform: rotate(-45deg) translate(-65px, -10px);
   }
+}
   .sixStepsFlow .steps {
-  width: 16.666667%;
+  width: 50%;
 }
 
 .employeeSteps.sixStepsFlow {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   height: auto;
@@ -198,4 +202,5 @@ body {
 .employeeSteps .employerStepsBG {
   padding-top: 35px;
 }
+
 

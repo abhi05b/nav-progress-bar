@@ -2,48 +2,51 @@
 
 /**
  * @ngdoc function
- * @name customValidationApp.controller:MainCtrl
+ * @name navProgressBarApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the customValidationApp
+ * Controller of the navProgressBarApp
  */
-angular.module('customValidationApp')
-  .controller('MainCtrl', function ($scope) {
+angular.module('navProgressBarApp')
+  .controller('MainCtrl', function ($scope,$rootScope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
 	$scope.navigationSections =
-[{label : 'dsad',
-  barWidth : 100
+[{label : 'Home',
+  pages : 2,
+  id :1
 },
-{label : 'asdd',
-  barWidth : 70
-},
-{label : 'uuuu',
-  barWidth : 70
+{label : 'Add Product',
+  pages : 3,
+  id:2
 }];
 
-$scope.processedStep ={number : 1};
+//$scope.section = null;
 
-$scope.determineViewStyle = function(index) {
-        var viewClasses = [];
-        //circle icon
-        if (index + 1 < $scope.navigationSections.length) {
-          viewClasses.push('circle');
-          if (index == $scope.processedStep.number) {
-            viewClasses.push('active');
-          } else if (index < $scope.processedStep.number) {
-            viewClasses.push('done');
-          }
-        } else {
-          //cart icon case
-          viewClasses.push('icon icon-cartLg');
-          if (index <= $scope.processedStep.number) {
-            viewClasses.push('active');
-          }
-        }
-        return viewClasses;
-      }
+
+$scope.addSection = function(isInvalid,section){
+	if(isInvalid){
+		$rootScope.$broadcast('onSubmit');
+	}else{
+		$scope.navigationSections = $scope.navigationSections || [];
+		$scope.navigationSections.push(angular.copy(section));
+		$scope.section = null;
+	}
+};
+
+
+$scope.getPageArray = function(num){
+var a=[];
+for(var i=0;i<num;i++){
+	a[i]=i+1;
+}
+return a;
+
+}
+
+
+
   });

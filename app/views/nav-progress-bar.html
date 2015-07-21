@@ -1,0 +1,9 @@
+<div class="employeeSteps sixStepsFlow" ng-attr-style="margin-left: {{(100-((100/navigationSections.length)*(navigationSections.length-1)))/2}}%">
+	<div ng-repeat="section in navigationSections" class="steps" ng-attr-style="width: {{100/(navigationSections.length)}}%">
+					<div ng-class="determineViewStyle($index+1)">
+						<span class="check">&#x2713;</span> 
+						<span class="title">{{section.label}}</span>
+					</div>
+					<progressbar value="section.barWidth"></progressbar>
+	</div>
+	</div>

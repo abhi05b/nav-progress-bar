@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name customValidationApp.controller:AboutCtrl
+ * @name navProgressBarApp.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the customValidationApp
+ * Controller of the navProgressBarApp
  */
-angular.module('customValidationApp')
+angular.module('navProgressBarApp')
   .controller('AboutCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
