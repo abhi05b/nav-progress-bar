@@ -21,7 +21,7 @@ angular
   ])
   .directive('navProgressBar', function () {
     return {
-      templateUrl: '../views/nav-progress-bar.html',
+      templateUrl: 'views/nav-progress-bar.html',
       restrict: 'E',
 	  scope :{
 		navigationSections :"=",
